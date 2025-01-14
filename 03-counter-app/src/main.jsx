@@ -1,9 +1,10 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { FirstApp } from './FirstApp'
+import './globals.css'
+import { CounterApp } from './CounterApp'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <FirstApp />
+    <CounterApp value={0} />
   </StrictMode>,
 )
