@@ -1,8 +1,14 @@
-/* eslint-disable no-constant-condition */
 /* eslint-disable no-undef */
 
-test("Esta prueba no debe de fallar", () => {
-  if (0 === 1) {
-    throw new Error("No se puede dividir entre cero");
-  }
+describe("Pruebas en <DemoComponent />", () => {
+	test("Esta prueba no debe de fallar", () => {
+		// Inicializacion
+		const message1 = "Hola Mundo";
+
+		// Estimulo o evaluacion
+		const message2 = message1.trim();
+
+		//Observar el comportamiento
+		expect(message1).toBe(message2);
+	});
 });
