@@ -1,10 +1,12 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './globals.css'
-import { CounterApp } from './CounterApp'
+import React from 'react';
+import ReactDOM from 'react-dom/client'
+import './globals.css';
+import { CounterApp } from './CounterApp';
+//import { FirstApp } from './FirstApp';
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <CounterApp value={0} />
-  </StrictMode>,
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    {/* <FirstApp title='Hola, Soy Goku' subTitle='SubTitle' name='Julian'/> */}
+    <CounterApp />
+  </React.StrictMode>
 )
